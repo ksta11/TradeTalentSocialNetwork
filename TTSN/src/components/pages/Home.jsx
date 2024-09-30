@@ -1,6 +1,5 @@
-import React from 'react';
 
-function App() {
+export function Home() {
   return (
     <div>
       <h1>HOME</h1>
@@ -8,5 +7,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
