@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 
 
-import { Home, Login, Account, Register } from './pages'
+import { Home, Login } from './pages'
 
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
 import App from './App.jsx'
