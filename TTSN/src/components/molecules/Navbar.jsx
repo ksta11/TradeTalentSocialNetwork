@@ -7,9 +7,9 @@ import './Navbar.css';
 const Navbar = () => {
   return (
     <Nav className="flex-column bg-light sidebar">
-      <HomeLink to="/">Inicio</HomeLink>
-      <LoginLink to="/login">Login</LoginLink>
-      <LoginLink to="/register">Register</LoginLink>
+      <HomeLink />
+      <LoginLink />
+      {/* Si necesitas un enlace de registro, crea un componente RegisterLink similar */}
     </Nav>
   );
 };
