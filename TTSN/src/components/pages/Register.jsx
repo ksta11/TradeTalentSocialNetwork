@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { CampoEntrada } from '../atoms/Campo_entrada';
-import {Label} from '../atoms/Label';
-import {Boton} from '../atoms/Boton';
+import { Label } from '../atoms/Label';
+import { boton as Boton } from '../atoms/Boton';
 import './Register.css';
 
 export function Register() {

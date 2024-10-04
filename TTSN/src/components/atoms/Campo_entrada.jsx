@@ -1,7 +1,7 @@
 import React from 'react';
 import './Campo_entrada.css';
 
-export function campo_entrada({ type, id, name, value, onChange, required }) {
+export function CampoEntrada({ type, id, name, value, onChange, required }) {
   return (
     <input
       className="form-input"
