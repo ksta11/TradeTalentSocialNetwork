@@ -44,7 +44,7 @@ export function Carousel({ slides }) {
               src={slide.imageUrl} 
               className="d-block w-100" 
               alt={slide.title}
-              style={{ objectFit: 'cover', height: '400px' }}
+              style={{ objectFit: 'cover', height: '250px' }}
             />
             <div className="container">
               <div className="carousel-caption text-start">

@@ -1,0 +1,14 @@
+.overflow-auto {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Para Firefox */
+    -ms-overflow-style: none;  /* Para Internet Explorer y Edge */
+  }
+  
+  .overflow-auto::-webkit-scrollbar {
+    display: none; /* Para Chrome, Safari y Opera */
+  }
+  
+.cards-scheduled-classes img {
+    max-height: 20rem;
+}
+
