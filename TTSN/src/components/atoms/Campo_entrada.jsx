@@ -1,4 +1,3 @@
-import React from 'react';
 import './Campo_entrada.css';
 
 export function CampoEntrada({ type, id, name, value, onChange, required }) {

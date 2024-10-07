@@ -1,4 +1,3 @@
-import React from 'react';
 import './boton.css';
 
 export function boton({ type, onClick, children }) {
