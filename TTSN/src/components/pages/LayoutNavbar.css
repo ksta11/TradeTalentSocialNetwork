@@ -1,0 +1,11 @@
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.main-content-wrapper {
+    margin-left: 8.33%;
+}
+
