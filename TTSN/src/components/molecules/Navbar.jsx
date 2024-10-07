@@ -7,12 +7,18 @@ import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <Nav className="flex-column bg-light sidebar">
-      <HomeLink />
-      <LoginLink />
-      <RegisterLink />
-      {/* Si necesitas un enlace de registro, crea un componente RegisterLink similar */}
-    </Nav>
+    <div className='container-fluid'>
+      <div className='row'>
+        <div className='col-12'>
+          <Nav className="flex-column bg-light sidebar">
+            <HomeLink />
+            <LoginLink />
+            <RegisterLink />
+            {/* Si necesitas un enlace de registro, crea un componente RegisterLink similar */}
+          </Nav>
+        </div>
+      </div>
+    </div>
   );
 };
 

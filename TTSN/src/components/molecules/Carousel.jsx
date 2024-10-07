@@ -24,6 +24,7 @@ export function Carousel({ slides }) {
   }
 
   return (
+    
     <div id="myCarousel" className="carousel slide mb-6">
       <div className="carousel-indicators">
         {slides.map((_, index) => (
