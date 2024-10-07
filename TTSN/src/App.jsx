@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import LayoutWithSidebar from './components/pages/LayoutNavbar';
 import { Home, Login, Register } from './components/pages';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
   return (
