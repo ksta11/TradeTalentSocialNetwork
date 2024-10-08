@@ -9,44 +9,44 @@ export function Home() {
       content: "Some representative placeholder content for the first slide of the carousel.",
       buttonText: "Sign up today",
       buttonLink: "#",
-      imageUrl: "https://via.placeholder.com/150"
+      imageUrl: "/img_carousel.jpg"
     },
     {
       title: "Another example headline.",
       content: "Some representative placeholder content for the second slide of the carousel.",
       buttonText: "Learn more",
       buttonLink: "#",
-      imageUrl: "https://via.placeholder.com/150"
+      imageUrl: "/img_carousel2.webp"
     },
     {
       title: "One more for good measure.",
       content: "Some representative placeholder content for the third slide of this carousel.",
       buttonText: "Browse gallery",
       buttonLink: "#",
-      imageUrl: "https://via.placeholder.com/150"
+      imageUrl: "/img_carousel3.png"
     }
   ];
 
   const cardsScheduledClasses = [
-    { className: "cards-scheduled-classes", title: "Card 1", date: "2024-01-01", imageUrl: "https://via.placeholder.com/150" },
-    { className: "cards-scheduled-classes", title: "Card 2", date: "2024-01-02", imageUrl: "https://via.placeholder.com/150" },
-    { className: "cards-scheduled-classes", title: "Card 3", date: "2024-01-03", imageUrl: "https://via.placeholder.com/150" },
-    { className: "cards-scheduled-classes", title: "Card 4", date: "2024-01-04", imageUrl: "https://via.placeholder.com/150" },
-    { className: "cards-scheduled-classes", title: "Card 5", date: "2024-01-05", imageUrl: "https://via.placeholder.com/150" },
+    { className: "Clase programada 1", title: "Clase de Inglés", date: "2024-01-01", imageUrl: "/clase_inglés.jpg" },
+    { className: "Clase programada 2", title: "Clase de Historia", date: "2024-01-02", imageUrl: "/clase_story.jpg" },
+    { className: "Clase programada 3", title: "Clase de Matemáticas", date: "2024-01-03", imageUrl: "/clase_mats.jpg" },
+    { className: "Clase programada 4", title: "Clase de Ciencias", date: "2024-01-04", imageUrl: "/clase_ciencias.jpg" },
+    { className: "Clase programada 5", title: "Clase de Arte", date: "2024-01-05", imageUrl: "/clase_arte.jpg" },
     // Añade más cards según sea necesario
   ];
 
   const cardsLearnNewSkills = [
-    { className: "cards-learn-new-skills", title: "Card 1", imageUrl: "https://via.placeholder.com/150" },
-    { className: "cards-learn-new-skills", title: "Card 2", imageUrl: "https://via.placeholder.com/150" },
-    { className: "cards-learn-new-skills", title: "Card 3", imageUrl: "https://via.placeholder.com/150" },
-    { className: "cards-learn-new-skills", title: "Card 4", imageUrl: "https://via.placeholder.com/150" },
-    { className: "cards-learn-new-skills", title: "Card 5", imageUrl: "https://via.placeholder.com/150" },
-    { className: "cards-learn-new-skills", title: "Card 6", imageUrl: "https://via.placeholder.com/150" },
-    { className: "cards-learn-new-skills", title: "Card 7", imageUrl: "https://via.placeholder.com/150" },
-    { className: "cards-learn-new-skills", title: "Card 8", imageUrl: "https://via.placeholder.com/150" },
-    { className: "cards-learn-new-skills", title: "Card 9", imageUrl: "https://via.placeholder.com/150" },
-    { className: "cards-learn-new-skills", title: "Card 10", imageUrl: "https://via.placeholder.com/150" },
+    { className: "Aprende esta nueva habilidad 1 ", title: "Fotografía", imageUrl: "/photography.jpg" },
+    { className: "Aprende esta nueva habilidad 2", title: "Programación", imageUrl: "/programación.jpg" },
+    { className: "Aprende esta nueva habilidad 3", title: "Pintura", imageUrl: "/pintura.jpg" },
+    { className: "Aprende esta nueva habilidad 4", title: "Cocina", imageUrl: "/kitchen.jpg" },
+    { className: "Aprende esta nueva habilidad 5", title: "Música", imageUrl: "/música.jpg" },
+    { className: "Aprende esta nueva habilidad 6", title: "Diseño Gráfico", imageUrl: "/graphic_design.jpg" },
+    { className: "Aprende esta nueva habilidad 7", title: "Idiomas", imageUrl: "/languages.jpg" },
+    { className: "Aprende esta nueva habilidad 8", title: "Jardinería", imageUrl: "/jardinería.jpg" },
+    { className: "Aprende esta nueva habilidad 9", title: "Fitness", imageUrl: "/fitness.jpg" },
+    { className: "Aprende esta nueva habilidad 10", title: "Ventas", imageUrl: "/ventas.jpg" },
     // Añade más cards según sea necesario
   ];
 
