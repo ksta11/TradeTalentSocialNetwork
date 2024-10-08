@@ -31,7 +31,7 @@ export function Home() {
     { className: "Clase programada 1", title: "Clase de Inglés", date: "2024-01-01", imageUrl: "/clase_inglés.jpg" },
     { className: "Clase programada 2", title: "Clase de Historia", date: "2024-01-02", imageUrl: "/clase_story.jpg" },
     { className: "Clase programada 3", title: "Clase de Matemáticas", date: "2024-01-03", imageUrl: "/clase_mats.jpg" },
-    { className: "Clase programada 4", title: "Clase de Ciencias", date: "2024-01-04", imageUrl: "/clase_ciencias.jpg" },
+    { className: "Clase programada 4", title: "Clase de Ciencias", date: "2024-01-04", imageUrl: "/clase_ciencias.png" },
     { className: "Clase programada 5", title: "Clase de Arte", date: "2024-01-05", imageUrl: "/clase_arte.jpg" },
     // Añade más cards según sea necesario
   ];
