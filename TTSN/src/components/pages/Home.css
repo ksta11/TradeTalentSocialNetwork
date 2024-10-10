@@ -1,14 +1,18 @@
+/* Estilos generales para el desplazamiento suave y la eliminación de barras de desplazamiento */
 .overflow-auto {
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Para Firefox */
-    -ms-overflow-style: none;  /* Para Internet Explorer y Edge */
-  }
-  
-  .overflow-auto::-webkit-scrollbar {
-    display: none; /* Para Chrome, Safari y Opera */
-  }
-  
-.cards-scheduled-classes img {
-    max-height: 20rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Para Firefox */
+  -ms-overflow-style: none;  /* Para Internet Explorer y Edge */
 }
 
+.overflow-auto::-webkit-scrollbar {
+  display: none; /* Para Chrome, Safari y Opera */
+}
+
+/* Redimensionar imágenes específicamente para cardsScheduledClasses */
+.cards-scheduled-classes img {
+  max-height: 20rem;  /* Máxima altura de 20 rem */
+  width: auto;        /* Mantener proporción de ancho */
+  max-width: 100%;    /* Limitar el ancho al tamaño del contenedor */
+  object-fit: cover;  /* Cubrir el contenedor sin distorsionar la imagen */
+}
