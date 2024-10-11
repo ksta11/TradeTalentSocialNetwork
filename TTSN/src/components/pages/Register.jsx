@@ -6,7 +6,7 @@ export function Register() {
 
     return (
         <div className="container-fluid">
-            <div className='row justify-content-center'>
+            <div className='row justify-content-center mt-5 mb-3'>
                 <div className='col-4'>
                     <h1>Registro de Usuario</h1>
                 </div>
