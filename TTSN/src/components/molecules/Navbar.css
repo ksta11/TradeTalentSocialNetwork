@@ -2,14 +2,13 @@
   top: 0 !important;
   left: 0 !important;
   width: 100% !important;
-  height: 90vh !important; /* Reducimos la altura para dejar espacio arriba y abajo */
+  height: 95vh !important; /* Reducimos la altura para dejar espacio arriba y abajo */
   background-color: #1a237e !important;
   z-index: 9999 !important;
-  padding: 20px 0 !important;
-  border-radius: 0 50px 50px 0 !important; /* Aumentamos el radio para hacerlo más semicircular */
+  border-radius: 50vh !important; /* Aumentamos el radio para hacerlo más semicircular */
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1) !important;
   position: relative !important; /* Añadimos posición relativa */
-  top: 5vh !important; /* Movemos la barra hacia abajo */
+  top: 2.5vh !important; /* Movemos la barra hacia abajo */
 }
 
 .sidebar .nav {
@@ -26,17 +25,18 @@
   align-items: center !important;
   color: #ffffff !important;
   background-color: transparent !important;
-  padding: 15px !important; /* Aumentamos el padding para hacer los iconos más grandes */
-  margin: 10px 0 !important; /* Ajustamos el margen vertical */
+  margin: 1.5vw 0 !important; /* Ajustamos el margen vertical */
   border-radius: 50% !important; /* Hacemos los iconos circulares */
   transition: all 0.3s ease !important;
   text-decoration: none !important;
-  width: 50px !important; /* Ancho fijo para los iconos */
-  height: 50px !important; /* Altura fija para los iconos */
+  width: 5vw !important; /* Ancho fijo para los iconos */
+  height: 5vw !important; /* Altura fija para los iconos */
+  margin-left: 1.5vw !important;
+  margin-right: 1.5vw !important;
 }
 
 .sidebar .nav-link i {
-  font-size: 1.5em !important; /* Aumentamos el tamaño de los iconos */
+  font-size: 2.2vw !important; /* Aumentamos el tamaño de los iconos */
 }
 
 .sidebar .nav-link:hover {
