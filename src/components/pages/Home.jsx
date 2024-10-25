@@ -1,7 +1,7 @@
 import './Home.css';
 import { Carousel } from '../molecules/Carousel';
 import { Card } from '../molecules/Card'; // Asumiendo que tienes un componente Card
-
+import { Header } from '../molecules/Header';
 
 export function Home() {
   const carouselSlides = [
