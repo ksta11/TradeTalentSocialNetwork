@@ -25,3 +25,14 @@
     padding: 15px;
   }
 }
+
+span {
+  color: #d8000c; /* Color del texto de error */
+  background-color: #ffbaba; /* Fondo rojo claro */
+  border: 1px solid #d8000c; /* Borde rojo */
+  border-radius: 4px; /* Bordes redondeados */
+  padding: 8px; /* Espaciado interno */
+  display: inline-block; /* Para que el padding funcione correctamente */
+  margin-top: 5px; /* Espacio superior */
+  font-size: 14px; /* Tamaño de fuente */
+}

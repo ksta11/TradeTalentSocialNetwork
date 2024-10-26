@@ -8,15 +8,17 @@ import {useForm} from 'react-hook-form';
 
 export function Login() {
 
-const {register,handleSubmit}= useForm();
+const {register,handleSubmit,formState:{errors}}= useForm();
 const onSubmit = (data) => {
     console.log(data); // Aquí puedes manejar los datos del formulario
 };
+const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 
   return (
 
-    <form onSubmit={handleSubmit(onSubmit)}> //cuando se enviíe el form debemos de llamar ala fn onSubmit
+    <form onSubmit={handleSubmit(onSubmit)}> 
+
       <div className="container-fluid">
 
               <div className='row justify-content-center mb-3 mt-5'>
@@ -33,9 +35,21 @@ const onSubmit = (data) => {
                         id="email"
                         type="email"
                         ariaDescribedby="emailHelpBlock"
-                        helpText="El correo electrónico debe ser válido."
-                        {...register("email",{required:true})}
-                      /> 
+                        helpText=""
+                        {...register("email",{
+                          required:{
+                          value:true,
+                          message:"Correo es requerido"
+                      
+                          },
+                          pattern:{
+                              value:emailRegex,
+                              message:"Correo no válido"
+                          }
+
+                  })}
+                  />
+                  {errors.email && <span>{errors.email.message}</span>}
                     </div>
               </div>
 
@@ -47,9 +61,20 @@ const onSubmit = (data) => {
                       id="password"
                       type="password"
                       ariaDescribedby="passwordHelpBlock"
-                      helpText="La contraseña debe tener entre 8 y 20 caracteres."
-                      {...register("password")}
-                      />
+                      helpText=""
+                      {...register("password",{
+                        required:{
+                            value:true,
+                            message:"Debe de ingresar una contraseña"
+                        },
+                        minLength:{
+                            value:6,
+                            message:"Contraseña debe de tener mínimo 6 caracteres"
+                        }
+                    
+                    })}
+                />
+                {errors.password && <span>{errors.password.message}</span>}
                     </div>
               </div>
           
