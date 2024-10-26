@@ -8,9 +8,9 @@ const Navbar = () => {
       <div className='row h-100'>
         <div className='col-12 p-0'>
           <Nav className="flex-column sidebar h-100 justify-content-center align-items-center">
-            <IconLink icon="bi-house-door" to="/" />
-            <IconLink icon="bi-person" to="/login" />
-            <IconLink icon="bi-person-plus" to="/register" />
+            <IconLink icon="bi-house-door" to="/" tooltipText="SOy gay"/>
+            <IconLink icon="bi-person" to="/login" tooltipText="Iniciar sesión"/>
+            <IconLink icon="bi-person-plus" to="/register" tooltipText="Registrarse"/>
           </Nav>
         </div>
       </div>
