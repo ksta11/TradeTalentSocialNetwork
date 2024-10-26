@@ -1,19 +1,22 @@
+import React, { forwardRef } from 'react';
 import Form from 'react-bootstrap/Form';
 
-function FormTextField({label, id, type, ariaDescribedby, helpText}) {
+const FormTextField = forwardRef(({ label, id, type, ariaDescribedby, helpText, ...props }, ref) => {
   return (
     <>
-    <Form.Label htmlFor="inputPassword5">{label}</Form.Label>
-    <Form.Control
+      <Form.Label htmlFor={id}>{label}</Form.Label>
+      <Form.Control
         type={type}
         id={id}
         aria-describedby={ariaDescribedby}
+        ref={ref}
+        {...props}
       />
       <Form.Text id={ariaDescribedby} muted>
         {helpText}
       </Form.Text>
     </>
   );
-}
+});
 
 export default FormTextField;

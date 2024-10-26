@@ -2,75 +2,88 @@ import React, { useState } from 'react';
 
 import FormTextField from '../atoms/Form_text';
 import Button_type from '../atoms/Button';
+
+import {useForm} from 'react-hook-form';
+import { Form } from 'react-bootstrap';
+
+
 export function Register() {
-
+const {register,handleSubmit}= useForm();
+const onSubmit = (data) => {
+    console.log(data); // Aquí puedes manejar los datos del formulario
+};
     return (
-        <div className="container-fluid">
-            <div className='row justify-content-center mt-5 mb-3'>
-                <div className='col-4'>
-                    <h1>Registro de Usuario</h1>
+        <form onSubmit={handleSubmit(onSubmit)}>
+            <div className="container-fluid">
+                <div className='row justify-content-center mt-5 mb-3'>
+                    <div className='col-4'>
+                        <h1>Registro de Usuario</h1>
+                    </div>
                 </div>
-            </div>
-            <div className='row justify-content-center mb-3'>
-                <div className='col-4'>
-                <FormTextField
-                label="Nombre de usuario"
-                id="username"
-                type="text"
-                ariaDescribedby="usernameHelpBlock"
-                helpText="El nombre de usuario debe tener entre 3 y 20 caracteres."
-
-                />
+                <div className='row justify-content-center mb-3'>
+                    <div className='col-4'>
+                    <FormTextField
+                    label="Nombre de usuario"
+                    id="username"
+                    type="text" 
+                    ariaDescribedby="usernameHelpBlock"
+                    helpText="El nombre de usuario debe tener entre 3 y 20 caracteres."
+                    {...register("username")}
+                    />
+                    </div>
                 </div>
-            </div>
-            
-            
-            
-            <div className='row justify-content-center mb-3'>
-                <div className='col-4'>
-                <FormTextField
-                    label="correo electrónico"
-                    id="useremail"
-                    type="email"
-                    ariaDescribedby="useremailHelpBlock"
-                    helpText="El correo electrónico debe ser válido."
-                />
                 
+                
+                
+                <div className='row justify-content-center mb-3'>
+                    <div className='col-4'>
+                    <FormTextField
+                        label="correo electrónico"
+                        id="useremail"
+                        type="email"
+                        ariaDescribedby="useremailHelpBlock"
+                        helpText="El correo electrónico debe ser válido."
+                        {...register("useremail")}
+                    />
+                    
+                    </div>
                 </div>
-            </div>
 
-            <div className='row justify-content-center mb-3'>
-                <div className='col-4'>
-                <FormTextField
-                    label="contraseña"
-                    id="userpassword"
-                    type="password"
-                    ariaDescribedby="userpasswordHelpBlock"
-                    helpText="La contraseña debe tener entre 8 y 20 caracteres."
-                />
+                <div className='row justify-content-center mb-3'>
+                    <div className='col-4'>
+                    <FormTextField
+                        label="contraseña"
+                        id="userpassword"
+                        type="password"
+                        ariaDescribedby="userpasswordHelpBlock"
+                        helpText="La contraseña debe tener entre 8 y 20 caracteres."
+                        {...register("userpassword")}
+                    />
+                    </div>
                 </div>
-            </div>
-            
-            <div className='row justify-content-center mb-3'>
-                <div className='col-4'>
-                <FormTextField
-                    label="confirmar contraseña"
-                    id="userpasswordconfirm"
-                    type="password"
-                    ariaDescribedby="userpasswordconfirmHelpBlock"
-                    helpText="La contraseña debe tener entre 8 y 20 caracteres."
-                />
+                
+                <div className='row justify-content-center mb-3'>
+                    <div className='col-4'>
+                    <FormTextField
+                        label="confirmar contraseña"
+                        id="userpasswordconfirm"
+                        type="password"
+                        ariaDescribedby="userpasswordconfirmHelpBlock"
+                        helpText="La contraseña debe tener entre 8 y 20 caracteres."
+                        {...register("userpasswordconfirm")}
+                    />
 
+                    </div>
                 </div>
-            </div>
-            
-            
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <Button_type label="Aceptar" size="lg"/>
-            </div>
-            
-            
+                
+                
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <Button_type label="Aceptar" size="lg" />
+                </div>
+                
+                
 
-        </div>
+            </div>
+        </form>
     );
 }
