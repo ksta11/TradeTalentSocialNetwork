@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 function Button_type({label, size, variant = "primary"}) {
   return (
     <div className="mb-2">
-      <Button variant={variant} size={size}>
+      <Button type='submit' variant={variant} size={size} >
         {label}
       </Button>
     </div>
