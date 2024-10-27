@@ -1,7 +1,7 @@
 import './Home.css';
 import { Carousel } from '../molecules/Carousel';
 import { Card } from '../molecules/Card'; // Asumiendo que tienes un componente Card
-
+import { Header } from '../molecules/Header';
 
 export function Home() {
   const carouselSlides = [
@@ -56,7 +56,7 @@ export function Home() {
       
 
       <Carousel slides={carouselSlides} />
-      <div className="container-fluid px-2 py-5">
+      <div className="container-fluid px-2 py-5 ">
         <div className="row">
           <div className="col-12">
             <h3 className="text-left">Clases Programadas</h3>
