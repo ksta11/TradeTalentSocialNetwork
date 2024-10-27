@@ -17,14 +17,14 @@ const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="container-fluid">
-                <div className='row justify-content-center mt-5 mb-3'>
-                    <div className='col-4'>
-                        <h1>Registro de Usuario</h1>
+            <div className="container">
+                <div className='row justify-content-center mb-3 mt-5'>
+                    <div className='col-12 col-sm-8 col-md-6 col-lg-6'>
+                        <h1 className="text-center">Registro de Usuario</h1>
                     </div>
                 </div>
                 <div className='row justify-content-center mb-3'>
-                    <div className='col-4'>
+                    <div className='col-12 col-sm-8 col-md-6 col-lg-4'>
                     <FormTextField
                     label="Nombre de usuario"
                     id="username"
@@ -40,12 +40,12 @@ const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                         },
                         minLength:{
                             value:2,
-                            message:"Nombre de usuario debe tener como mínimo 10 caracteres"
+                            message:"Nombre de usuario debe tener como mínimo 2 caracteres"
                         },
                         maxLength:{
 
                             value:20,
-                            message: "Nombre de usuario debe tener como máximo 60 caracteres"
+                            message: "Nombre de usuario debe tener como máximo 20 caracteres"
                         }
                     })}
                     />
@@ -57,9 +57,9 @@ const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                 
                 
                 <div className='row justify-content-center mb-3'>
-                    <div className='col-4'>
+                    <div className='col-12 col-sm-8 col-md-6 col-lg-4'>
                     <FormTextField
-                        label="correo electrónico"
+                        label="Correo electrónico"
                         id="useremail"
                         type="email"
                         ariaDescribedby="useremailHelpBlock"
@@ -82,9 +82,9 @@ const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                 </div>
 
                 <div className='row justify-content-center mb-3'>
-                    <div className='col-4'>
+                    <div className='col-12 col-sm-8 col-md-6 col-lg-4'>
                     <FormTextField
-                        label="contraseña"
+                        label="Contraseña"
                         id="userpassword"
                         type="password"
                         ariaDescribedby="userpasswordHelpBlock"
@@ -106,9 +106,9 @@ const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                 </div>
                 
                 <div className='row justify-content-center mb-3'>
-                    <div className='col-4'>
+                    <div className='col-12 col-sm-8 col-md-6 col-lg-4'>
                     <FormTextField
-                        label="confirmar contraseña"
+                        label="Confirmar contraseña"
                         id="userpasswordconfirm"
                         type="password"
                         ariaDescribedby="userpasswordconfirmHelpBlock"
@@ -132,12 +132,11 @@ const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                 </div>
                 
                 
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <Button_type label="Aceptar" size="lg" />
+                <div className='row justify-content-center'>
+                    <div className='col-12 col-sm-8 col-md-6 col-lg-4 text-center'>
+                        <Button_type label="Aceptar" size="lg" />
+                    </div>
                 </div>
-                
-                
-
             </div>
         </form>
     );
