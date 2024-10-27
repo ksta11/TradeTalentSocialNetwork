@@ -1,0 +1,110 @@
+/* Contenedor principal con dos columnas */
+.login-container {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Altura completa de la pantalla */
+}
+
+/* Columna izquierda para la imagen */
+.left-image {
+    flex: 0.35; /* El formulario ocupa el 35% de la mitad izquierda
+    background-color: #eaeaea; /* Color de fondo opcional */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-image img {
+    width: 111%; 
+    height: 111%;/* Ajusta el alto del contenedor */
+    object-fit: contain; /* Contiene la imagen dentro del área sin recortar */
+    padding: 20px; /* Espacio adicional para evitar el corte en los bordes */
+}
+
+/* Columna derecha para el formulario */
+.form-container {
+    flex: 0.65; /* El formulario ocupa el 65% de la mitad derecha */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f9f9f9; /* Fondo claro para el formulario */
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1); /* Sombra para separar las secciones */
+    border-radius: 0 8px 8px 0; /* Bordes redondeados solo en el lado derecho */
+}
+
+.form-container form {
+    width: 100%;
+    max-width: 400px; /* Limita el ancho del formulario */
+}
+
+/* Estilo del título */
+.form-container h1 {
+    color: #333; /* Color de texto oscuro */
+    font-family: 'Arial', sans-serif; /* Fuente amigable */
+    margin-bottom: 20px; /* Espaciado inferior */
+    font-size: 1.8em;
+}
+
+label {
+    color: #168edfd3; /* Cambia este color al que prefieras */
+    font-weight: bold; /* Opcional: para que se vea más destacado */
+}
+
+/* Estilo de los campos de texto */
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-bottom: 10px; /* Espaciado inferior */
+    transition: border-color 0.3s; /* Transición suave para el borde */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff; /* Color de borde al enfocar */
+    outline: none; /* Sin contorno */
+}
+
+/* Estilo de los mensajes de error */
+span {
+    color: red;
+    font-size: 0.9em;
+    background-color: #f8d7da; /* Fondo rojo claro */
+    border: 1px solid #f5c2c7; /* Borde rojo suave */
+    padding: 5px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    display: block; /* Para que ocupe toda la línea */
+    margin-top: 5px; /* Espaciado superior */
+}
+
+/* Estilo del botón */
+button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar cursor al pasar */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+    width: 100%; /* Ancho completo para el botón */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+/* Opcional: Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+    .left-image {
+        display: none; /* Oculta la imagen en pantallas pequeñas */
+    }
+    .form-container {
+        border-radius: 8px; /* Bordes redondeados en todas las esquinas */
+    }
+}
