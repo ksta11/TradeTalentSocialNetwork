@@ -21,7 +21,7 @@ export function Login() {
           <div className="text-center mb-3">
             <h1>Iniciar Sesión</h1>
           </div>
-          <div className="mb-3">
+          <div className="mb-3 align-textfields">
             <FormTextField
               label="Nombre de usuario o correo"
               id="email"
@@ -41,7 +41,7 @@ export function Login() {
             />
             {errors.email && <span className="error-message">{errors.email.message}</span>}
           </div>
-          <div className="mb-3">
+          <div className="mb-3 align-textfields">
             <FormTextField
               label="Contraseña"
               id="password"
@@ -59,15 +59,13 @@ export function Login() {
                 }
               })}
             />
-            {/* Texto de "¿Olvidaste tu contraseña?" */}
+            {errors.password && <span className="error-message">{errors.password.message}</span>}
             <div className="forgot-password">
               <a>¿Olvidaste tu contraseña?</a>
             </div>
-            {/* Mensaje de error */}
-            {errors.password && <span className="error-message">{errors.password.message}</span>}
           </div>
           <div className="text-center">
-            <Button_type label="Iniciar sesión" size="lg" />
+            <Button_type label="Entrar" size="lg" />
           </div>
         </form>
       </div>
