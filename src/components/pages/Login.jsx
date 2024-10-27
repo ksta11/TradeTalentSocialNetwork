@@ -26,7 +26,7 @@ const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         <div className='row justify-content-center mb-3'>
           <div className='col-12 col-sm-8 col-md-6 col-lg-4'>
             <FormTextField
-              label="Correo electrónico"
+              label="Correo o nombre de usuario"
               id="email"
               type="email"
               ariaDescribedby="emailHelpBlock"
@@ -34,7 +34,7 @@ const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
               {...register("email", {
                 required: {
                   value: true,
-                  message: "Correo es requerido"
+                  message: "Correo o nombre de usuario es requerido"
                 },
                 pattern: {
                   value: emailRegex,

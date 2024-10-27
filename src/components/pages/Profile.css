@@ -1,0 +1,235 @@
+.profile-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f0f0; /* Cambia el color de fondo aquí */
+}
+
+.column {
+flex: 1; /* Cada columna ocupa el mismo espacio */
+
+display: flex;
+justify-content: center; /* Centrar el contenido horizontalmente */
+align-items: start; /* Centrar el contenido verticalmente */
+}
+
+
+.custom-container {
+margin-top: 3rem;
+
+display: flex;
+flex-direction: column; /* Cambia la orientación a columna */
+justify-content: start; /* Alinear los elementos al inicio de la columna */
+gap: 10px; /* Espacio entre los elementos */
+border-radius: 5px;
+margin-bottom: 15px;
+padding: 10px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, 
+            rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+height: 24rem; /* Altura fija */
+overflow-y: auto; /* Agrega scroll vertical si el contenido excede la altura */
+}
+
+.d-flex.flex-nowrap {
+gap: 600px; /* Espacio entre tarjetas */
+height: 13rem; /* Ajuste de altura total de la fila */
+}
+
+.card-wrapper {
+min-width: 140px; /* Ancho mínimo */
+max-width: 185px; /* Ancho máximo */
+height: 100%; /* Ocupar toda la altura disponible del contenedor */
+}
+
+
+
+
+
+
+.profile-card {
+flex: 0 0 120px; /* Establecer un ancho fijo más pequeño */
+height: 150px; /* Ajustar la altura total de la tarjeta */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 5px; /* Reducir el relleno */
+border: 1px solid #ddd;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+text-align: center;
+background-color: #fff; /* Fondo blanco */
+margin: 5px; /* Separación entre tarjetas */
+}
+
+
+
+.profile-card img {
+width: 100px; /* Tamaño reducido */
+height: 50px; /* Mantener proporción */
+border-radius: 50%; /* Imagen circular */
+object-fit: cover; /* Ajuste adecuado de la imagen */
+margin-bottom: 5px; /* Espacio debajo de la imagen */
+}
+
+
+.profile-card h4 {
+font-size: 0.9rem; /* Título más pequeño */
+margin: 5px 0;
+}
+
+.profile-card p {
+font-size: 0.8rem; /* Texto más compacto */
+color: #666; /* Texto gris */
+margin: 0;
+}
+
+
+
+card.profile-card{
+align-items: center;
+width: 5rem;
+}
+
+.cardprofile {
+overflow: hidden;
+border-radius: 5px;
+margin-bottom: 15px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+width: 100%; /* Cambiado a 100% para ocupar toda la fila */
+max-width: none; /* Eliminar el ancho máximo para que ocupe todo el espacio disponible */
+margin: auto; /* Centrar la tarjeta */
+}
+
+.img1 img {
+width: 100%; /* Ancho completo del contenedor */
+height: auto; /* Altura automática para mantener la proporción */
+max-height: 200px; /* Altura máxima para evitar que crezca demasiado */
+object-fit: cover; /* Mantener la proporción de la imagen */
+}
+
+.img2 {
+display: flex; /* Usar flexbox para centrar la imagen */
+justify-content: center; /* Centrar horizontalmente */
+margin-top: -10%; /* Ajustar el margen superior para centrarlo */
+
+}
+
+.img2 img {
+width: 30%; /* Ancho relativo para que sea responsivo */
+max-width: 120px; /* Ancho máximo para el círculo */
+height: auto; /* Altura automática para mantener la proporción */
+aspect-ratio: 1 / 1; /* Mantener la proporción 1:1 para que sea un círculo */
+border-radius: 50%; /* Mantener la forma circular */
+border: 5px solid white;
+object-fit: cover;
+}
+
+
+.card-body{
+margin-top: -25px;
+
+}
+
+.card.profile-card {
+height: auto;
+
+}
+
+
+
+.card-title {
+margin-top: 10px; /* Añadir margen superior al contenedor del título */
+}
+
+.row.flex-nowrap {
+  display: flex; /* Asegúrate de que sea un contenedor flex */
+  justify-content: start; /* Centrar los elementos en el contenedor */
+  flex-wrap: nowrap; /* Mantener en una sola línea */
+  overflow-x: auto; /* Permitir desplazamiento horizontal */
+  gap: 1px; /* Espacio entre las tarjetas, ajusta según sea necesario */
+  padding: 10px; /* Añade un poco de espacio interno si lo deseas */
+}
+
+.username {
+  font-weight: 300; /* Letra delgada */
+  font-style: italic; /* Cursiva */
+  font-size: 1em; /* Tamaño de fuente más grande */
+  color: #686d72; /* Color azul (puedes cambiarlo) */
+  font-family: 'Arial', sans-serif; /* Tipo de fuente */
+  text-decoration: underline;
+}
+
+/* Profile.css */
+.icon-wrapper {
+  display: flex;
+  flex-direction: column; /* Alinear ícono y texto en columna */
+  align-items: center; /* Centrar horizontalmente */
+  text-align: center; /* Centrar el texto */
+}
+
+
+.icon-wrapper span {
+  margin-top: 5px; /* Espacio entre el ícono y el texto */
+  font-size: 0.9rem; /* Tamaño de fuente del texto */
+  color: #666; /* Color del texto */
+}
+
+.circular-icon {
+  width: 50px; /* Ancho del ícono */
+  height: 50px; /* Altura del ícono */
+  border-radius: 50%; /* Hacer que el ícono sea circular */
+  color: #000000  !important;
+  padding: 10px; /* Espaciado interno */
+  display: flex; /* Usar flexbox para centrar el contenido */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+  font-size: 24px; /* Tamaño del ícono */
+  transition: color 0.3s; /* Transición suave para el color */
+}
+
+/* Efecto hover */
+.icon-wrapper:hover .circular-icon {
+  transform: scale(1.1); /* Aumentar el tamaño del ícono */
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  color: #ffffff !important;
+  background-color: #1a237e  !important;
+}
+
+.stars-container {
+ margin-top: -10px;
+  background-color: #1a237e ;
+  
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, 
+            rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+            
+}
+
+.circular-icon-star {
+  color: #ddd;
+  width: 50px; /* Ancho del ícono */
+  height: 50px; /* Altura del ícono */
+  
+ 
+  padding: 5px; /* Espaciado interno */
+  display: flex; /* Usar flexbox para centrar el contenido */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  
+  font-size: 24px; /* Tamaño del ícono */
+  transition: color 0.3s; /* Transición suave para el color */
+}
+.icon-wrapper-stars:hover .circular-icon-star {
+  transform: scale(1.1); /* Aumentar el tamaño del ícono */
+  color: #FFD700; /* Cambiar el color de la estrella al pasar el mouse (ejemplo: dorado) */
+
+}
+
+.custom-container-options {
+  margin-top: 20px;
+}
+
+.row-second-container{
+  margin-top: 30px;
+}
