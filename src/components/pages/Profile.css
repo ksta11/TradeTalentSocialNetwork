@@ -233,3 +233,15 @@ margin-top: 10px; /* Añadir margen superior al contenedor del título */
 .row-second-container{
   margin-top: 30px;
 }
+
+/* Cambia el nombre de la clase de mensaje a mensaje-icono */
+.icon-wrapper span {
+  margin-top: 5px; /* Espacio entre el ícono y el texto */
+  font-size: 0.9rem; /* Tamaño de fuente del texto */
+  color: #666; /* Color del texto */
+}
+
+/* Añade un nuevo estilo para la clase mensaje-icono si es necesario */
+.mensaje-icono {
+  /* Aquí puedes agregar estilos específicos para la nueva clase si lo deseas */
+}
