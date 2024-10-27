@@ -1,31 +1,3 @@
-.register-container {
-  max-width: 400px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.register-container h1 {
-  text-align: center;
-  color: #1a237e;
-  margin-bottom: 20px;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-/* Estilos adicionales para mejorar la responsividad */
-@media (max-width: 480px) {
-  .register-container {
-    max-width: 100%;
-    margin: 10px;
-    padding: 15px;
-  }
-}
-
 span {
   color: #d8000c; /* Color del texto de error */
   background-color: #ffbaba; /* Fondo rojo claro */
@@ -36,3 +8,5 @@ span {
   margin-top: 5px; /* Espacio superior */
   font-size: 14px; /* Tamaño de fuente */
 }
+
+
