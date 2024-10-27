@@ -11,6 +11,7 @@ const Navbar = () => {
             <IconLink icon="bi-house-door" to="/" />
             <IconLink icon="bi-person" to="/login" />
             <IconLink icon="bi-person-plus" to="/register" />
+            <IconLink icon="bi-file-person" to="/profile" />
           </Nav>
         </div>
       </div>
