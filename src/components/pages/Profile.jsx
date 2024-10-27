@@ -85,19 +85,19 @@ export function Profile() {
                             <div className='d-flex justify-content-around mt-3'>
                               <div className='icon-wrapper'>
                                 <i className="bi bi-camera-video circular-icon"></i>
-                                <span>Video</span> 
+                                <span className='mensaje-icono'>Video</span> 
                               </div>
                               <div className='icon-wrapper'>
                                 <i className="bi bi-telephone circular-icon"></i>
-                                <span>Llamada</span> 
+                                <span className='mensaje-icono'>Llamada</span> 
                               </div>
                               <div className='icon-wrapper'>
                                 <i className="bi bi-chat-dots circular-icon"></i>
-                                <span>Mensaje</span> 
+                                <span className='mensaje-icono'>Mensaje</span> 
                               </div>
                               <div className='icon-wrapper'>
                                 <i className="bi bi-people circular-icon"></i>
-                                <span>Añadir</span> 
+                                <span className='mensaje-icono'>Añadir</span> 
                               </div>
                             </div>
                           </div>
