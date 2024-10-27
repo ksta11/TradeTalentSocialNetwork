@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import LayoutWithSidebar from './components/pages/LayoutNavbar';
-import { Home, Login, Register,Profile } from './components/pages';
+import { Home, Login, Register,Profile, Chat } from './components/pages';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
@@ -19,6 +19,11 @@ function App() {
             <Profile />
           </LayoutWithSidebar>
         } />
+        <Route path="/chat" element={
+          <LayoutWithSidebar>
+            <Chat />
+          </LayoutWithSidebar>
+        }/>
         {/* Agrega aquí otras rutas que requieran la barra lateral */}
         {/* Por ejemplo:
         <Route path="/dashboard" element={
