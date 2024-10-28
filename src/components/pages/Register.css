@@ -1,4 +1,4 @@
-.container {
+.container-register {
   justify-content: center; /* Centrar horizontalmente */
   align-items: center; /* Centrar verticalmente */
   background-color: #cbe8ff; /* Color de fondo */
@@ -15,13 +15,14 @@ h1 {
 }
 
 /* Estilo para el título h2 en jsx*/
-h2 {
+.tambien-register {
   color: #333;
   font-size: 18px;
+  text-align: center;
 }
 
 /* Estilo para los mensajes de error */
-span {
+form span {
   color: #d8000c; /* Color del texto de error */
   background-color: #ffbaba; /* Fondo rojo claro */
   border: 1px solid #d8000c; /* Borde rojo */
@@ -96,3 +97,5 @@ input[type="password"] {
   border: 1px solid #ccc; /* Color y grosor del borde */
   border-radius: 4px; /* Bordes redondeados */
 }
+
+

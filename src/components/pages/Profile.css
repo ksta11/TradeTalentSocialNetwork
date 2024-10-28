@@ -1,16 +1,10 @@
-.profile-container {
-  display: flex;
-  height: 100vh;
-  background-color: #f0f0f0; /* Cambia el color de fondo aquí */
+.container{
+  background-color: white;
 }
 
-.column {
-flex: 1; /* Cada columna ocupa el mismo espacio */
 
-display: flex;
-justify-content: center; /* Centrar el contenido horizontalmente */
-align-items: start; /* Centrar el contenido verticalmente */
-}
+
+
 
 
 .custom-container {
@@ -85,10 +79,7 @@ margin: 0;
 
 
 
-card.profile-card{
-align-items: center;
-width: 5rem;
-}
+
 
 .cardprofile {
 overflow: hidden;
