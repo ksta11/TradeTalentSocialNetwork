@@ -4,9 +4,20 @@ export function ChatField({user, messages}) {
     return(
         <>
             <div className="container-fluid">
-                <div className="row py-4 bg-secondary-subtle rounded">
-                    <div className="col-12">
-                        <h5 className="mb-0">Chat con {user}</h5>
+                <div className="row py-3 bg-secondary-subtle rounded">
+                    <div className="col-2 img-profile align-items-center justify-content-center">
+                        <i className="bi bi-file-earmark-person"></i>
+                    </div>
+                    <div className="col-6 align-items-center my-0 text-teal">
+                        <h5 className="my-3 mx-1">Chat con {user}</h5>
+                    </div>
+                    <div className="col-3 d-flex align-items-center justify-content-center ms-auto">
+                        <button className="btn btn-success mx-2">
+                            <i className="bi bi-telephone-fill"></i>
+                        </button>
+                        <button className="btn btn-primary mx-2">
+                            <i className="bi bi-camera-video-fill"></i>
+                        </button>
                     </div>
                 </div>
                 <div className="row">
@@ -16,7 +27,7 @@ export function ChatField({user, messages}) {
                                 {msg[0] === "Tú" ? (
                                     <div className="col-8 ms-auto">
                                         <div className="row">
-                                            <div className="col-auto  ms-auto py-2 mt-3 bg-success rounded-4">
+                                            <div className="col-auto  ms-auto py-2 mt-3 bg-success rounded-4 shadow-lg">
                                                 <p key={index} className="mb-0 py-2 px-2">
                                                     {msg[1]}
                                                 </p>
@@ -26,7 +37,7 @@ export function ChatField({user, messages}) {
                                 ) : (
                                     <div className="col-8">
                                         <div className="row">
-                                            <div className="col-auto py-2 mt-3 bg-primary rounded-4">
+                                            <div className="col-auto py-2 mt-3 bg-primary rounded-4 shadow-lg">
                                                 <p key={index} className="mb-0 py-2 px-2">
                                                     {msg[1]}
                                                 </p>
