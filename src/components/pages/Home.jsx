@@ -75,7 +75,7 @@ export function Home() {
         </div>
         <div className="row flex-nowrap overflow-auto">
           {cardsLearnNewSkills.map(card => (
-            <div key={card.title} className="col-4 col-md-2 mb-4">
+            <div key={card.title} className="col-12 col-md-2 mb-4">
               <Card className={card.className} title={card.title} content={''} imageUrl={card.imageUrl}/>
             </div>
           ))}

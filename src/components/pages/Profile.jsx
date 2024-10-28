@@ -35,7 +35,7 @@ export function Profile() {
         <div className="container-fluid px-2 py-5">
 
         <div className='row justify-content-center'>
-                    <div className="col-md-10 col-12"> {/* Cambiado a col-md-3 para que ocupe el mismo espacio que la primera columna en pantallas pequeñas */} 
+                    <div className="col-md-10 col-12"> {/* Cambiado a col-md-10 para que ocupe el mismo espacio que la primera columna en pantallas pequeñas */} 
                                 
                             <div className='container'>
                               <h2 className='text-center'>
@@ -74,7 +74,7 @@ export function Profile() {
 
                             </div>    
                     </div>
-                    </div>
+                </div>
 
 
 

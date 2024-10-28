@@ -57,7 +57,6 @@ export function Register() {
                     </div>
 
                     <div className="col-md-4 align-flex">
-                        <div className='right-input-container'>
                         <div className='mb-3 end'>
                             <FormTextField
                                 label="Contraseña"
@@ -84,8 +83,7 @@ export function Register() {
                                 })}
                             />
                             {errors.userpasswordconfirm && <span>{errors.userpasswordconfirm.message}</span>}
-                        </div>
-                    </div>
+                        </div>    
                     </div>
                 </div>
 
@@ -104,7 +102,7 @@ export function Register() {
             </div>
 
             {/* Nuevo contenedor para los botones adicionales */}
-            <div className="button-container text-center mt-4">
+            <div className="button-container options-container text-center mt-4">
                 <Button_type label="Facebook" size="md" className="btn-option1" type='button' />
                 <Button_type label="Google" size="md" className="btn-option2" type='button'/>
                 <Button_type label="Microsoft" size="md" className="btn-option3" type='button' />
