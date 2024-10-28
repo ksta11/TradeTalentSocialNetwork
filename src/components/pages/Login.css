@@ -7,7 +7,7 @@
 
 /* Columna izquierda para la imagen */
 .left-image {
-    flex: 0.35; /* El formulario ocupa el 35% de la mitad izquierda */
+    flex: 0.35; /* La imagen ocupa el 35% de la mitad izquierda */
     background-color: #b5deff; /* Color de fondo opcional */
     display: flex;
     align-items: center;
@@ -48,7 +48,7 @@
 
 label {
     color: #168edfd3; /* Cambia este color al que prefieras */
-    font-weight: bold; /* Opcional: para que se vea más destacado */
+    font-weight: bold; /* Aplica negrilla */
 }
 
 /* Estilo de los campos de texto */
