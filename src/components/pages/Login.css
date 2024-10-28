@@ -69,7 +69,7 @@ input[type="password"]:focus {
 }
 
 /* Estilo de los mensajes de error */
-span {
+form span {
     color: red;
     font-size: 0.9em;
     background-color: #f8d7da; /* Fondo rojo claro */

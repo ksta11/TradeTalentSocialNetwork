@@ -16,7 +16,7 @@ export function Register() {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="container">
+            <div className="container-register">
                 <div className='row justify-content-center mb-3 mt-5'>
                     <div className='col-12 col-sm-8 col-md-6 col-lg-6'>
                         <h1 className="text-center">Registro de Usuario</h1>
@@ -56,8 +56,9 @@ export function Register() {
                         </div>
                     </div>
 
-                    <div className="col-md-4">
-                        <div className='mb-3'>
+                    <div className="col-md-4 align-flex">
+                        <div className='right-input-container'>
+                        <div className='mb-3 end'>
                             <FormTextField
                                 label="Contraseña"
                                 id="userpassword"
@@ -85,6 +86,7 @@ export function Register() {
                             {errors.userpasswordconfirm && <span>{errors.userpasswordconfirm.message}</span>}
                         </div>
                     </div>
+                    </div>
                 </div>
 
                 <div className='row justify-content-center'>
@@ -97,7 +99,7 @@ export function Register() {
             {/*Nuevo título para registrarse con otras opciones*/}
             <div className='row justify-content-center mb-3 mt-4'>
                 <div className='col-12 col-sm-8 col-md-6 col-lg-6'>
-                    <h2 className="text-center">---- También ----</h2>
+                    <h2 className="tambien-register">---- También ----</h2>
                 </div>
             </div>
 
