@@ -1,10 +1,9 @@
 import Button from 'react-bootstrap/Button';
-// Eliminamos la importación de Label ya que no se está utilizando
 
-function Button_type({label, size, variant = "primary"}) {
+function Button_type({ label, size, variant, className, type = 'submit' }) {
   return (
     <div className="mb-2">
-      <Button type='submit' variant={variant} size={size} >
+      <Button type={type} variant={variant} size={size} className={className}>
         {label}
       </Button>
     </div>

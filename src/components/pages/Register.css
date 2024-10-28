@@ -1,5 +1,27 @@
-/* Cambia el selector para que solo afecte a los span dentro de un formulario */
-form span {
+.container {
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  background-color: #cbe8ff; /* Color de fondo */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  margin-top: 5px; /* Ajusta este valor para aumentar o disminuir el espacio superior */
+}
+
+/* Estilo para el título h1 en jsx*/
+h1 {
+  color: #333; 
+}
+
+/* Estilo para el título h2 en jsx*/
+h2 {
+  color: #333;
+  font-size: 18px;
+}
+
+/* Estilo para los mensajes de error */
+span {
   color: #d8000c; /* Color del texto de error */
   background-color: #ffbaba; /* Fondo rojo claro */
   border: 1px solid #d8000c; /* Borde rojo */
@@ -10,13 +32,67 @@ form span {
   font-size: 14px; /* Tamaño de fuente */
 }
 
+/* Acomoda el ancho de todos los textfields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%; /* Ajusta el ancho al 100% de la columna contenedora */
+  max-width: 300px; /* Ancho máximo deseado */
+}
+
+/* Contenedor de los botones adicionales */
+.button-container {
+  display: flex; /* Usar flexbox */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  gap: 30px; /* Espacio entre los botones */
+  margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilos para los botones de opciones adicionales */
+.button-container .btn-option1 {
+  background-color: #007bff; /* Color de fondo para el botón de Facebook */
+  color: white; /* Color del texto */
+  border: 2px solid #0056b3; /* Color del borde */
+}
+
+.button-container .btn-option1:hover {
+  background-color: #0056b3; /* Fondo al pasar el mouse */
+  border-color: #003a7b; /* Color del borde al pasar el mouse */
+}
+
+.button-container .btn-option2 {
+  background-color: #28a745; /* Color de fondo para el botón de Google */
+  color: white; /* Color del texto */
+  border: 2px solid #218838; /* Color del borde */
+}
+
+.button-container .btn-option2:hover {
+  background-color: #218838; /* Fondo al pasar el mouse */
+  border-color: #1c6c30; /* Color del borde al pasar el mouse */
+}
+
+.button-container .btn-option3 {
+  background-color: #727272; /* Color de fondo para el botón de Microsoft */
+  color: white; /* Color del texto */
+  border: 2px solid #505050; /* Color del borde */
+}
+
+.button-container .btn-option3:hover {
+  background-color: #505050; /* Fondo al pasar el mouse */
+  border-color: #303030; /* Color del borde */
+}
+
+/* Específicamente para textfield Nombre de usuario */
 .error-message {
-  color: #d8000c; /* Color del texto de error */
-  background-color: #ffbaba; /* Fondo rojo claro */
-  border: 1px solid #d8000c; /* Borde rojo */
+    margin-top: 15px; /* Ajusta el margen superior según sea necesario */
+}
+
+/* Específicamente para textfield Nombre de usuario */
+.adjust-height {
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+  padding: 10px; /* Asegúrate de que el padding sea consistente */
+  box-sizing: border-box; /* Asegúrate de que el padding no afecte la altura total */
+  border: 1px solid #ccc; /* Color y grosor del borde */
   border-radius: 4px; /* Bordes redondeados */
-  padding: 8px; /* Espaciado interno */
-  display: inline-block; /* Para que el padding funcione correctamente */
-  margin-top: 5px; /* Espacio superior */
-  font-size: 14px; /* Tamaño de fuente */
 }
