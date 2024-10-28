@@ -1,0 +1,6 @@
+.chat-list {
+    height: 91vh !important;
+    overflow-y: auto !important; /* Permite el desplazamiento vertical */
+    border: 1px solid #ccc; /* Opcional: un borde para distinguir el área */
+}
+

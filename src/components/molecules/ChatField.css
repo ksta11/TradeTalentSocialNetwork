@@ -1,0 +1,5 @@
+.chat-field {
+    height: 68vh !important;
+    overflow-y: auto !important; /* Permite el desplazamiento vertical en los mensajes */
+}
+
