@@ -54,7 +54,6 @@ export function Home() {
   return (
     <>
       
-
       <Carousel slides={carouselSlides} />
       <div className="container-fluid px-2 py-5 ">
         <div className="row">
