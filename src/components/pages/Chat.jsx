@@ -94,8 +94,15 @@ export function Chat() {
                 <div className="col-4 chat-list">
                     <ListGroup>
                         {userChats.map((chat) => (
-                            <ListGroup.Item className="py-3 my-2 rounded-3 text-center " key={chat} onClick={() => setSelectedUser(chat)} active={selectedUser === chat} style={{ cursor: 'pointer' }}>
-                                {chat}
+                            <ListGroup.Item className="py-3 my-2 rounded-3 item shadow" key={chat} onClick={() => setSelectedUser(chat)} active={selectedUser === chat} style={{ cursor: 'pointer' }}>
+                                <div className="row align-items-center">
+                                    <div className="col-2">
+                                        <i className="bi bi-file-earmark-person"></i>
+                                    </div>
+                                    <div className="col-10 text-center font-size-3">
+                                        {chat}
+                                    </div>
+                                </div>
                             </ListGroup.Item>
                         ))}
                     </ListGroup>

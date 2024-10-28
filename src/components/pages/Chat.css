@@ -2,5 +2,28 @@
     height: 91vh !important;
     overflow-y: auto !important; /* Permite el desplazamiento vertical */
     border: 1px solid #ccc; /* Opcional: un borde para distinguir el área */
+    
+    font-size: 1.4vw;
+    justify-content: center !important;
+    
+    
+    
+}
+
+.chat-list .item{
+    transition: all 0.6s ease !important;
+}
+
+.chat-list .item:hover {
+    color: #ffffff !important;
+    background-color: #0d6efd !important;
+}
+
+.chat-list h5 {
+    margin-left: 5vw;
+}
+
+.chat-list i {
+    font-size: 2.2vw;
 }
 
