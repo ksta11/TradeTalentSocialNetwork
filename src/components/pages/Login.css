@@ -81,7 +81,7 @@ form span {
 }
 
 /* Estilo del botón */
-button {
+form button {
     background-color: #007bff; /* Color de fondo del botón */
     color: white; /* Color del texto del botón */
     border: none; /* Sin borde */
@@ -92,7 +92,7 @@ button {
     width: 100%; /* Ancho completo para el botón */
 }
 
-button:hover {
+form button:hover {
     background-color: #0056b3; /* Color de fondo al pasar el mouse */
 }
 
