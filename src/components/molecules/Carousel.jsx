@@ -6,7 +6,7 @@ export function Carousel({ slides }) {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 5000); // Cambia de slide cada 5 segundos
+    }, 7000); // Cambia de slide cada 5 segundos
 
     return () => clearInterval(interval);
   }, [slides.length]);
@@ -49,8 +49,16 @@ export function Carousel({ slides }) {
             />
             <div className="container">
               <div className="carousel-caption text-start">
-                <h1>{slide.title}</h1>
-                <p className="opacity-75">{slide.content}</p>
+                <div className="row">
+                  <div className="col-auto bg-white rounded-pill">
+                    <h1 className="opacity-90 text-primary">{slide.title}</h1>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-auto bg-white rounded-2 my-2">
+                    <p className="opacity-90 text-black ">{slide.content}</p>
+                  </div>
+                </div>
                 <p><a className="btn btn-lg btn-primary" href={slide.buttonLink}>{slide.buttonText}</a></p>
               </div>
             </div>

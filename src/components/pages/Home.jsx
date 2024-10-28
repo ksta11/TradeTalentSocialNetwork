@@ -6,23 +6,23 @@ import { Header } from '../molecules/Header';
 export function Home() {
   const carouselSlides = [
     {
-      title: "Example headline.",
-      content: "Some representative placeholder content for the first slide of the carousel.",
-      buttonText: "Sign up today",
+      title: "Negocios.",
+      content: "Expande tu vision acerca de los negocios con los mejores.",
+      buttonText: "Más información",
       buttonLink: "#",
       imageUrl: "/img_carousel.jpg"
     },
     {
-      title: "Another example headline.",
-      content: "Some representative placeholder content for the second slide of the carousel.",
-      buttonText: "Learn more",
+      title: "Ingenieria.",
+      content: "Complementa tus conocimientos sobre ingenieria con nuestros usuarios especializados en cada campo de la ingenieria.",
+      buttonText: "Saber más",
       buttonLink: "#",
       imageUrl: "/img_carousel2.webp"
     },
     {
-      title: "One more for good measure.",
-      content: "Some representative placeholder content for the third slide of this carousel.",
-      buttonText: "Browse gallery",
+      title: "Desata tu creatividad.",
+      content: "Dale rienda suelta a tu creatividad apreniendo acerca de pintura, diseño grafico, danzas y mucho más.",
+      buttonText: "Aprende ahora",
       buttonLink: "#",
       imageUrl: "/img_carousel3.png"
     }
