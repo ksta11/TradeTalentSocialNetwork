@@ -29,10 +29,10 @@
   border-radius: 50% !important; /* Hacemos los iconos circulares */
   transition: all 0.3s ease !important;
   text-decoration: none !important;
-  width: 5vw !important; /* Ancho fijo para los iconos */
-  height: 5vw !important; /* Altura fija para los iconos */
-  margin-left: 1.5vw !important;
-  margin-right: 1.5vw !important;
+  width: 3.5vw !important; /* Ancho fijo para los iconos */
+  height: 3.5vw !important; /* Altura fija para los iconos */
+  margin-left: 2.5vw !important;
+  margin-right: 2.5vw !important;
 }
 
 .sidebar .nav-link i {
