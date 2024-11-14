@@ -2,6 +2,8 @@ import './Home.css';
 import { Carousel } from '../molecules/Carousel';
 import { Card } from '../molecules/Card'; // Asumiendo que tienes un componente Card
 import { Header } from '../molecules/Header';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 
 export function Home() {
   const carouselSlides = [
@@ -58,26 +60,24 @@ export function Home() {
       <div className="container-fluid px-2 py-5 ">
         <div className="row mb-4">
           <div className="col-12 bg-dark py-3 rounded-3">
-            <div className="col-10 mx-auto">
-              <form class="d-flex" role="search">
-                <div className="col-8 mx-2">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                </div>
-                <div className="col-2 mx-2">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </div>
-                <div class="col-2 btn-group mx-2">
-                  <button type="button" class="btn btn-danger">filters</button>
-                  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="visually-hidden">Toggle Dropdown</span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </div>
-              </form>
+            <div className="row">
+              <div className="col-10">
+                <form class="d-flex" role="search">
+                  <div className="col-9 mx-auto">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search"/>
+                  </div>
+                  <div className="col-2 mx-auto">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                  </div>
+                </form>
+              </div> 
+              <div class="col-2">
+                <DropdownButton id="dropdown-basic-button" title="Filtros">
+                  <Dropdown.Item href="#/action-1">Clases Programdas</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">Habilidades</Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">Usuarios</Dropdown.Item>
+                </DropdownButton>
+              </div>
             </div>
           </div>
         </div>
