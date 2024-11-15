@@ -25,14 +25,14 @@
   align-items: center !important;
   color: #ffffff !important;
   background-color: transparent !important;
-  margin: 1.5vw 0 !important; /* Ajustamos el margen vertical */
+  margin: 0.5vw 0 !important; /* Ajustamos el margen vertical */
   border-radius: 50% !important; /* Hacemos los iconos circulares */
   transition: all 0.3s ease !important;
   text-decoration: none !important;
-  width: 2.5vw !important; /* Ancho fijo para los iconos */
-  height: 2.5vw !important; /* Altura fija para los iconos */
-  margin-left: 3vw !important;
-  margin-right: 3vw !important;
+  width: 3.5vw !important; /* Ancho fijo para los iconos */
+  height: 3.5vw !important; /* Altura fija para los iconos */
+  margin-left: 2.5vw !important;
+  margin-right: 2.5vw !important;
 }
 
 .sidebar .nav-link i {
