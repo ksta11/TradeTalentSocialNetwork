@@ -35,7 +35,7 @@ export function Admin() {
             <div className="card-header bg-primary text-white">Reporte de Usuarios</div>
             <div className="card-body">
               <h5 className="card-title">Usuarios Registrados</h5>
-              <p className="card-text">Información sobre el total de usuarios, nuevos registros y actividad reciente.</p>
+              <p className="card-text">Lista con los ultimos reportes a usuarios.</p>
               <button className="btn btn-primary" onClick={() => handleViewDetails('usuarios')}>Ver Detalles</button>
             </div>
           </div>
@@ -47,7 +47,7 @@ export function Admin() {
             <div className="card-header bg-success text-white">Reporte de Publicaciones</div>
             <div className="card-body">
               <h5 className="card-title">Publicaciones Totales</h5>
-              <p className="card-text">Número total de publicaciones, tendencias y contenido popular.</p>
+              <p className="card-text">Lista con los ultimos reportes de publicaciones.</p>
               <button className="btn btn-success" onClick={() => handleViewDetails('publicaciones')}>Ver Detalles</button>
             </div>
           </div>
@@ -59,7 +59,7 @@ export function Admin() {
             <div className="card-header bg-warning text-dark">Reporte de Comentarios</div>
             <div className="card-body">
               <h5 className="card-title">Comentarios Realizados</h5>
-              <p className="card-text">Resumen de comentarios, actividad reciente y temas más comentados.</p>
+              <p className="card-text">Lista con los ultimos reportes a comentarios en publicaciones.</p>
               <button className="btn btn-warning" onClick={() => handleViewDetails('comentarios')}>Ver Detalles</button>
             </div>
           </div>
