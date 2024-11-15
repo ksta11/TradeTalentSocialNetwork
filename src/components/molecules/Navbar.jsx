@@ -13,7 +13,8 @@ const Navbar = () => {
             <IconLink icon="bi-person-plus" to="/register"  tooltipText="Register" />
             <IconLink icon="bi-file-person" to="/profile"  tooltipText="Profile"/>
             <IconLink icon="bi-chat-dots" to="/chat" tooltipText="Chat"/>
-            <IconLink icon="bi-person" to="/admin" tooltipText="Admin"/>
+            <IconLink icon="bi-shield-lock" to="/admin" tooltipText="Admin"/>
+            <IconLink icon="bi bi-globe2" to="/AllMembers" tooltipText="All Members"/>
           </Nav>
         </div>
       </div>
