@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import LayoutWithSidebar from './components/pages/LayoutNavbar';
-import { Home, Login, Register,Profile, Chat, Admin, AllMembers } from './components/pages';
+import { Home, Login, Register,Profile, Chat, Admin, AllMembers, Notifications } from './components/pages';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
@@ -18,6 +18,12 @@ function App() {
           <Route path="/AllMembers" element={
           <LayoutWithSidebar>
             <AllMembers />
+          </LayoutWithSidebar>
+          } />
+
+          <Route path="/Notifications" element={
+          <LayoutWithSidebar>
+            <Notifications />
           </LayoutWithSidebar>
           } />
 

@@ -1,0 +1,60 @@
+/* src/components/pages/Notifications.css */
+
+.notifications-container {
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.horizontal-card {
+    display: flex;
+    align-items: center;
+    background-color: white; /* Fondo blanco para la tarjeta */
+    border: 1px solid #eaeaea; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px;
+    margin: 10px 0; /* Espaciado entre tarjetas */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 500px;
+}
+
+.horizontal-card-img {
+    border-radius: 50%; /* Imagen circular */
+    margin-right: 10px; /* Espaciado a la derecha */
+}
+
+.horizontal-card-body {
+    flex-grow: 1; /* Para que el contenido ocupe el espacio restante */
+}
+
+.button-group {
+    display: flex; /* Usar flexbox para alinear los botones */
+    gap: 10px; /* Espaciado entre botones */
+}
+
+.accept-button {
+    background-color: #007bff; /* Color del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+}
+
+.accept-button:hover {
+    background-color: #0056b3; /* Color al pasar el mouse */
+}
+
+.deny-button {
+    background-color: #dc3545; /* Color del botón de denegar */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+}
+
+.deny-button:hover {
+    background-color: #c82333; /* Color al pasar el mouse */
+}
