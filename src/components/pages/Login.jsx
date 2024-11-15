@@ -2,6 +2,8 @@ import React from 'react';
 import './Login.css';
 import FormTextField from '../atoms/Form_text';
 import Button_type from '../atoms/Button';
+import IconLink from '../atoms/IconLink';
+
 import { useForm } from 'react-hook-form';
 
 export function Login() {
@@ -61,7 +63,7 @@ export function Login() {
             />
             {errors.password && <span className="error-message">{errors.password.message}</span>}
             <div className="forgot-password">
-              <a>¿Olvidaste tu contraseña?</a>
+              <a href="/password-recovery">¿Olvidaste tu contraseña?</a>
             </div>
           </div>
           <div className="text-center">
