@@ -1,7 +1,10 @@
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import LayoutWithSidebar from './components/pages/LayoutNavbar';
-import { Home, Login, Register,Profile, Chat, Admin, AllMembers, Notifications } from './components/pages';
+import IconLink from './components/atoms/IconLink';
+import { Home, Login, Register,Profile, Chat, Admin, AllMembers, Notifications, PasswordRecovery, Survey } from './components/pages';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import './App.css'; // Asegúrate de importar el archivo CSS
 
 function App() {
   return (
@@ -9,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/Admin" element={
+        <Route path="/admin" element={
           <LayoutWithSidebar>
             <Admin />
           </LayoutWithSidebar>
@@ -41,15 +44,14 @@ function App() {
           <LayoutWithSidebar>
             <Chat />
           </LayoutWithSidebar>
-        }/>
-        {/* Agrega aquí otras rutas que requieran la barra lateral */}
-        {/* Por ejemplo:
-        <Route path="/dashboard" element={
-          <LayoutWithSidebar>
-            <Dashboard />
-          </LayoutWithSidebar>
-        } /> */}
+        } />
+        <Route path="/password-recovery" element={<PasswordRecovery />} />
+        <Route path="/survey" element={<Survey />} />
       </Routes>
+      
+      <div className="icon-container">
+        <IconLink icon="bi bi-emoji-wink-fill icon-large" to="/survey" tooltipText="Encuesta" />
+      </div>
     </>
   );
 }
