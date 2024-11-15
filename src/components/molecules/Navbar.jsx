@@ -15,6 +15,7 @@ const Navbar = () => {
             <IconLink icon="bi-chat-dots" to="/chat" tooltipText="Chat"/>
             <IconLink icon="bi-shield-lock" to="/admin" tooltipText="Admin"/>
             <IconLink icon="bi bi-globe2" to="/AllMembers" tooltipText="All Members"/>
+            <IconLink icon="bi bi-bell" to="/Notifications" tooltipText="Notifications"/>
           </Nav>
         </div>
       </div>
