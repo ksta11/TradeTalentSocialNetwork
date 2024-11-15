@@ -7,3 +7,5 @@ export { Video } from './Video'
 export { Admin } from './Admin'
 export { PasswordRecovery } from './PasswordRecovery';
 export { Survey } from './Survey';
+export { AllMembers } from './AllMembers'
+export { Notifications } from './Notifications'

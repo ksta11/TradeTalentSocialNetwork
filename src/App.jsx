@@ -1,8 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import LayoutWithSidebar from './components/pages/LayoutNavbar';
-import { Home, Login, Register, Profile, Chat, Admin, PasswordRecovery, Survey } from './components/pages';
 import IconLink from './components/atoms/IconLink';
+import { Home, Login, Register,Profile, Chat, Admin, AllMembers, Notifications, PasswordRecovery, Survey } from './components/pages';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css'; // Asegúrate de importar el archivo CSS
 
@@ -16,7 +16,20 @@ function App() {
           <LayoutWithSidebar>
             <Admin />
           </LayoutWithSidebar>
-        } />
+          } />
+
+          <Route path="/AllMembers" element={
+          <LayoutWithSidebar>
+            <AllMembers />
+          </LayoutWithSidebar>
+          } />
+
+          <Route path="/Notifications" element={
+          <LayoutWithSidebar>
+            <Notifications />
+          </LayoutWithSidebar>
+          } />
+
         <Route path="/" element={
           <LayoutWithSidebar>
             <Home />
