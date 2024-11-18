@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import LayoutWithSidebar from './components/pages/LayoutNavbar';
 import IconLink from './components/atoms/IconLink';
-import { Home, Login, Register,Profile, Chat, Admin, AllMembers, Notifications, PasswordRecovery, Survey } from './components/pages';
+import { Home, Login, Register,Profile, Chat, Admin, AllMembers, Notifications, PasswordRecovery, Survey , VideoCall} from './components/pages';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css'; // Asegúrate de importar el archivo CSS
 
@@ -43,6 +43,11 @@ function App() {
         <Route path="/chat" element={
           <LayoutWithSidebar>
             <Chat />
+          </LayoutWithSidebar>
+        } />
+        <Route path="/videocall" element={
+          <LayoutWithSidebar>
+            <VideoCall otherPersonName="Juan Pérez" />
           </LayoutWithSidebar>
         } />
         <Route path="/password-recovery" element={<PasswordRecovery />} />
