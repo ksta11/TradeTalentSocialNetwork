@@ -1,4 +1,5 @@
 import './ChatField.css'
+import IconLink from '../atoms/IconLink'
 
 export function ChatField({user, messages}) {
     return(
@@ -16,7 +17,7 @@ export function ChatField({user, messages}) {
                             <i className="bi bi-telephone-fill"></i>
                         </button>
                         <button className="btn btn-primary mx-2">
-                            <i className="bi bi-camera-video-fill"></i>
+                            <IconLink icon="bi bi-camera-video-fill" to="/videocall" tooltipText="VideoCall"/>
                         </button>
                     </div>
                 </div>
