@@ -16,6 +16,7 @@ const Navbar = () => {
             <IconLink icon="bi-shield-lock" to="/admin" tooltipText="Admin"/>
             <IconLink icon="bi bi-globe2" to="/AllMembers" tooltipText="All Members"/>
             <IconLink icon="bi bi-bell" to="/Notifications" tooltipText="Notifications"/>
+            <IconLink icon="bi bi-images" to="/user-posts" tooltipText="posts"/>
           </Nav>
         </div>
       </div>

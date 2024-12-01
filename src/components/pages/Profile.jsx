@@ -8,7 +8,9 @@ export function Profile() {
 
   const [showReportOptions, setShowReportOptions] = useState(false); // Estado para mostrar opciones de reporte
   const [reportSuccess, setReportSuccess] = useState(false); // Estado para mostrar mensaje de éxito
-  const [rating, setRating] = useState(0); // Estado para la calificación
+  const [userName, setUserName] = useState("John Doe"); // Estado para el nombre del usuario
+  const [userHandle, setUserHandle] = useState("john69Coder"); // Estado para el nombre de usuario
+  const [isSwitchOn, setIsSwitchOn] = useState(false); // Estado para el switch
 
   const handleReportClick = () => {
     setShowReportOptions(!showReportOptions); // Alternar visibilidad
@@ -26,8 +28,18 @@ export function Profile() {
     setReportSuccess(false); // Cerrar el diálogo
   };
 
-  const handleRatingClick = (value) => {
-    setRating(value); // Establecer la calificación seleccionada
+  const handleEditUserName = () => {
+    const newUserName = prompt("Ingrese el nuevo nombre:", userName);
+    if (newUserName) setUserName(newUserName); // Actualizar nombre si se proporciona
+  };
+
+  const handleEditUserHandle = () => {
+    const newUserHandle = prompt("Ingrese el nuevo nombre de usuario:", userHandle);
+    if (newUserHandle) setUserHandle(newUserHandle); // Actualizar nombre de usuario si se proporciona
+  };
+
+  const handleSwitchChange = () => {
+    setIsSwitchOn(!isSwitchOn); // Alternar el estado del switch
   };
 
   const cardsAchievements = [
@@ -60,13 +72,33 @@ export function Profile() {
                 <div className='img1'>
                   <img src="public\LandscapeImage.jpg" alt="img1" />
                 </div>
+                <div className="form-check form-switch" style={{ display: 'inline-block', marginTop: '10px' }}>
+                    <input 
+                      className="form-check-input" 
+                      type="checkbox" 
+                      role="switch" 
+                      checked={isSwitchOn} 
+                      onChange={handleSwitchChange} 
+                    />
+                    <label className="form-check-label">
+                      {isSwitchOn ? 'Disponible' : 'No disponible'}
+                    </label>
+                </div>
                 <div className='img2'>
                   <img src="public\WomanProfilePicture.jpeg" alt="profile" />
                 </div>
                 <div className='main'>
-                  <h2 className='text-center'>John Doe</h2>
+                  <h2 className='text-center'>{userName}
+                    <button className="btn btn-link" onClick={handleEditUserName}>
+                      <i className="bi bi-pencil"></i>
+                    </button>
+                  </h2>
                   <p className='text-center'>
-                    <p className='username'>john69Coder</p>
+                    <p className='username'>{userHandle}
+                      <button className="btn btn-link" onClick={handleEditUserHandle}>
+                        <i className="bi bi-pencil"></i>
+                      </button>
+                    </p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     maybe hijo locust somebody like that.
@@ -109,7 +141,7 @@ export function Profile() {
             {showReportOptions && ( // Mover el contenedor de opciones de reporte fuera del div de íconos
               <div className="report-options mt-4" style={{ width: '42%', marginLeft: '405px', textAlign: 'center'}}>
                 <p><strong>¿Por qué quieres reportar a este usuario?</strong></p>
-                <div className="button-group" style={{ width: '98%', margin: '0 auto' }}>
+                <div className="button-group" style={{ width: '98%', margin: '0 auto'}}>
                   <button className="btn btn-danger w-100 mb-2" onClick={handleReportButtonClick}>Comportamiento inapropiado</button>
                   <button className="btn btn-danger w-100 mb-2" onClick={handleReportButtonClick}>Spam</button>
                   <button className="btn btn-danger w-100 mb-2" onClick={handleReportButtonClick}>Suplantación de identidad</button>
@@ -142,7 +174,7 @@ export function Profile() {
             )}
           </div>
           
-          <div className='row-second-container'>
+          <div className='row-second-container' style={{marginTop: '50px'}}>
                             <div className='row'>
                               <p className='text-center'>Calificar</p>
                             </div>
