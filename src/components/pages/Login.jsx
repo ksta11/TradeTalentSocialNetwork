@@ -21,7 +21,7 @@ export function Login() {
       <div className="form-container">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="text-center mb-3">
-            <h1>Iniciar Sesión</h1>
+            <h1 className="text-center mb-4 display-4 text-primary font-weight-bold">Iniciar Sesión</h1>
           </div>
           <div className="mb-3 align-textfields">
             <FormTextField

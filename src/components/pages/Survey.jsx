@@ -12,7 +12,7 @@ export function Survey() {
 
     return (
         <div className="container mt-5">
-            <h1 className="text-center mb-4">Encuesta de Satisfacción</h1>
+            <h1 className="text-center mb-4 display-4 text-primary font-weight-bold">Encuesta de Satisfacción</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
                 {/*Pregunta1*/}
                 <div className="mb-3">

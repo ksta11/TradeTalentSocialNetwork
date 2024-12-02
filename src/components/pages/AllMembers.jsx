@@ -37,7 +37,7 @@ export function AllMembers() {
     return (
         <div className="container px-2 py-5">
             <div>
-                <h1 className='text-center'>Conoce personas con habilidades similares</h1>
+                <h1 className="text-center mb-4 display-4 text-primary font-weight-bold">Conoce personas con habilidades similares</h1>
             </div>
 
             <div className="row flex">  

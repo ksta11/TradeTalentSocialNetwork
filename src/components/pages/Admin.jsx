@@ -26,7 +26,7 @@ export function Admin() {
 
   return (
     <div className="container my-5">
-      <h1 className="text-center mb-4">Panel de Administración</h1>
+      <h1 className="text-center mb-4 display-4 text-primary font-weight-bold">Panel de Administración</h1>
 
       <div className="row">
         {/* Reporte de Usuarios */}

@@ -19,7 +19,7 @@ export function Register() {
             <div className="container-register">
                 <div className='row justify-content-center mb-3 mt-5'>
                     <div className='col-12 col-sm-8 col-md-6 col-lg-6'>
-                        <h1 className="text-center">Registro de Usuario</h1>
+                        <h1 className="text-center mb-4 display-4 text-primary font-weight-bold">Registro de Usuario</h1>
                     </div>
                 </div>
 

@@ -55,7 +55,7 @@ export function Notifications() {
         <div className="container-fluid">
             <div className="row">
                 <div className="notifications-container col-6">
-                    <h2>Solicitudes de Seguimiento</h2>
+                    <h2 className="text-center mb-4 display-4 text-primary font-weight-bold">Solicitudes de Seguimiento</h2>
                     <button className="btn btn-danger mb-3" onClick={handleClearRequests}>Eliminar Todas las Solicitudes</button>
                     {requests.length === 0 ? (
                         <p>No tienes solicitudes de seguimiento.</p>
@@ -76,7 +76,7 @@ export function Notifications() {
                 </div>
 
                 <div className="col-6">
-                    <h2 className="my-4">Notificaciones de Clases</h2>
+                    <h2 className="text-center mb-4 display-4 text-primary font-weight-bold">Notificaciones de Clases</h2>
                     <button className="btn btn-danger mb-3" onClick={handleClearNotifications}>Eliminar Todas las Notificaciones</button>
                     <div className="row">
                         {notifications.length === 0 ? (

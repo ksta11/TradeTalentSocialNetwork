@@ -49,7 +49,12 @@ function App() {
         } />
         <Route path="/password-recovery" element={<PasswordRecovery />} />
         <Route path="/survey" element={<Survey />} />
-        <Route path="/user-posts" element={<UserPosts />} />
+        <Route path="/user-posts" element={
+          <LayoutWithSidebar>
+          <UserPosts/>
+        </LayoutWithSidebar>
+          } />
+
       </Routes>
       
       <div className="icon-container">

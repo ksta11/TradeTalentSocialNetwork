@@ -66,7 +66,7 @@ export function Profile() {
       <div className='row justify-content-center'>
         <div className="col-md-10 col-12"> 
           <div className='container'>
-            <h2 className='text-center'>Perfil de Usuario</h2>
+            <h2 className="text-center mb-4 display-4 text-primary font-weight-bold">Perfil de Usuario</h2>
             <div className='row'>
               <div className='cardprofile'>
                 <div className='img1'>
