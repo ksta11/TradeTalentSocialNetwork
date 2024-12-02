@@ -9,7 +9,7 @@ import './Register.css';
 export function Register() {
     const { register, handleSubmit, formState: { errors }, watch } = useForm();
     const onSubmit = (data) => {
-        console.log(data); // Aquí puedes manejar los datos del formulario
+        console.log(data); // Aquí mostramos los datos del formulario
     };
 
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -89,23 +89,25 @@ export function Register() {
 
                 <div className='row justify-content-center'>
                     <div className='col-12 col-sm-8 col-md-6 col-lg-4 text-center'>
-                        <Button_type label="Aceptar" size="lg" />
+                        <Button_type label="Aceptar" size="lg"  />
                     </div>
                 </div>
             </div>
             
-            {/*Nuevo título para registrarse con otras opciones*/}
+            {/*también*/}
             <div className='row justify-content-center mb-3 mt-4'>
                 <div className='col-12 col-sm-8 col-md-6 col-lg-6'>
-                    <h2 className="tambien-register">---- También ----</h2>
+                    <h2 className="text-center tambien-register">---- También ----</h2>
                 </div>
             </div>
 
-            {/* Nuevo contenedor para los botones adicionales */}
+            {/*Botones      */}
             <div className="button-container options-container text-center mt-4">
-                <Button_type label="Facebook" size="md" className="btn-option1" type='button' />
-                <Button_type label="Google" size="md" className="btn-option2" type='button'/>
-                <Button_type label="Microsoft" size="md" className="btn-option3" type='button' />
+                <div className="d-flex justify-content-center">
+                    <Button_type label="Facebook" size="md" className="btn btn-primary mx-2" type='button' />
+                    <Button_type label="Google" size="md" className="btn btn-danger mx-2" type='button'/>
+                    <Button_type label="Microsoft" size="md" className="btn btn-info mx-2" type='button' />
+                </div>
             </div>
         </form>
     );

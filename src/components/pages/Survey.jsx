@@ -6,7 +6,7 @@ export function Survey() {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     const onSubmit = (data) => {
-        console.log(data); // Aquí puedes manejar los datos de la encuesta
+        console.log(data); 
         alert("Encuesta enviada. ¡Gracias por participar!");
     };
 
@@ -14,7 +14,7 @@ export function Survey() {
         <div className="container mt-5">
             <h1 className="text-center mb-4">Encuesta de Satisfacción</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
-                {/* Pregunta 1 */}
+                {/*Pregunta1*/}
                 <div className="mb-3">
                     <label className="form-label">1. ¿Cómo calificarías nuestro servicio?</label>
                     <select className="form-select" {...register("serviceRating", { required: { value: true, message: "Calificación es requerida" } })}>
@@ -28,14 +28,14 @@ export function Survey() {
                     {errors.serviceRating && <span className="text-danger">{errors.serviceRating.message}</span>}
                 </div>
 
-                {/* Pregunta 2 */}
+                
                 <div className="mb-3">
                     <label className="form-label">2. ¿Qué mejorarías en nuestro servicio?</label>
                     <textarea className="form-control" {...register("improvements", { required: { value: true, message: "Este campo es requerido" } })} rows="3"></textarea>
                     {errors.improvements && <span className="text-danger">{errors.improvements.message}</span>}
                 </div>
 
-                {/* Pregunta 3 */}
+                {/* Pregunta3 */}
                 <div className="mb-3">
                     <label className="form-label">3. ¿Recomendarías nuestro servicio a otros?</label>
                     <div>
@@ -51,7 +51,7 @@ export function Survey() {
                     </div>
                 </div>
 
-                {/* Botón de envío */}
+                {/*Botón*/}
                 <div className="text-center">
                     <Button_type label="Enviar Encuesta" size="lg" />
                 </div>
