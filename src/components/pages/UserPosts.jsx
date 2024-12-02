@@ -4,9 +4,9 @@ import IconLink from '../atoms/IconLink';
 
 export function UserPosts() {
     const [posts, setPosts] = useState([
-        { id: 1, content: 'Publicación 1', likes: 0, user: 'jacobo.arroyavep', image: '/publicacion1.png' },
+        { id: 1, content: 'Publicación 1', likes: 0, user: 'gato.arroyavep', image: '/gato.png' },
         { id: 2, content: 'Publicación 2', likes: 0, user: 'elpepe3212', image: '/publicacion2.png' },
-        { id: 3, content: 'Publicación 3', likes: 0, user: 'Anonimo111111', image: '/publicacion3.png' }
+        { id: 3, content: 'Publicación 3', likes: 0, user: 'zeus111111', image: '/zeus.jpg' }
         // Agrega más publicaciones según sea necesario
     ]);
 
